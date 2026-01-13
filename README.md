@@ -1,1 +1,2 @@
 This is an application for practicing calling emergency services. Please note, that you should not call actual emergency services when practicing. Instead, you can do a role play where another person will answer the phone and answer according to this script.
+
