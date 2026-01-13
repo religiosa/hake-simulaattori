@@ -42,9 +42,14 @@ export function DecisionTree({ data, startNodeId }: DecisionTreeProps) {
   return (
     <div className={styles.container}>
       {history.length > 0 && (
-        <button className={styles.backButton} onClick={handleBack}>
-          ← Takaisin
-        </button>
+        <div className={styles.navButtons}>
+          <button className={styles.backButton} onClick={handleBack}>
+            ← Takaisin
+          </button>
+          <button className={styles.restartNavButton} onClick={handleRestart}>
+            ↺ Alusta
+          </button>
+        </div>
       )}
 
       {currentNode.isResult ? (

@@ -9,7 +9,12 @@ interface ResultNodeProps {
 export function ResultNode({ node, onRestart }: ResultNodeProps) {
   return (
     <div className={styles.resultNode}>
-      <p className={styles.resultContent}>{node.resultContent}</p>
+      <span className={styles.resultIcon}>🚑</span>
+      <div className={styles.question}>
+        {node.resultContent?.map((line, index) => (
+          <p key={index} className={styles.quoteLine}>{line}</p>
+        ))}
+      </div>
       <button className={styles.restartButton} onClick={onRestart}>
         Aloita alusta
       </button>

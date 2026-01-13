@@ -9,7 +9,11 @@ interface QuestionNodeProps {
 export function QuestionNode({ node, onSelect }: QuestionNodeProps) {
   return (
     <div className={styles.questionNode}>
-      <h2 className={styles.question}>{node.question}</h2>
+      <div className={styles.question}>
+        {node.question.map((line, index) => (
+          <p key={index} className={styles.quoteLine}>{line}</p>
+        ))}
+      </div>
       <div className={styles.options}>
         {node.options.map((option, index) => (
           <button

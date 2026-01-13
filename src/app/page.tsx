@@ -8,7 +8,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Häke-simulaattori</h1>
         <p className={styles.subtitle}>
-          Vastaa kysymyksiin löytääksesi sinulle sopivat palvelut
+          Harjoitelkaa hätäkeskukseen soittamista roolileikin avulla.
         </p>
         <DecisionTree data={decisionTreeData} startNodeId={START_NODE_ID} />
       </main>

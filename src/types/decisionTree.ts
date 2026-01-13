@@ -5,10 +5,10 @@ export interface TreeOption {
 
 export interface TreeNode {
   id: string;
-  question: string;
+  question: string[];
   options: TreeOption[];
   isResult?: boolean;
-  resultContent?: string;
+  resultContent?: string[];
 }
 
 export type DecisionTreeData = Record<string, TreeNode>;
